@@ -1,0 +1,215 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    140.82.121.6          10.0.2.15             TLSv1.2  117    Application Data, Application Data
+
+Frame 1: 117 bytes on wire (936 bits), 117 bytes captured (936 bits) on interface enp0s3, id 0
+Ethernet II, Src: RealtekU_12:35:02 (52:54:00:12:35:02), Dst: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9)
+Internet Protocol Version 4, Src: 140.82.121.6, Dst: 10.0.2.15
+Transmission Control Protocol, Src Port: 443, Dst Port: 57230, Seq: 1, Ack: 1, Len: 63
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000041740    10.0.2.15             140.82.121.6          TCP      54     57230 → 443 [ACK] Seq=1 Ack=64 Win=62780 Len=0
+
+Frame 2: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: RealtekU_12:35:02 (52:54:00:12:35:02)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 140.82.121.6
+Transmission Control Protocol, Src Port: 57230, Dst Port: 443, Seq: 1, Ack: 64, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.000000521    140.82.121.6          10.0.2.15             TCP      60     443 → 57230 [FIN, ACK] Seq=64 Ack=1 Win=65535 Len=0
+
+Frame 3: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface enp0s3, id 0
+Ethernet II, Src: RealtekU_12:35:02 (52:54:00:12:35:02), Dst: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9)
+Internet Protocol Version 4, Src: 140.82.121.6, Dst: 10.0.2.15
+Transmission Control Protocol, Src Port: 443, Dst Port: 57230, Seq: 64, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000918812    10.0.2.15             140.82.121.6          TCP      54     57230 → 443 [FIN, ACK] Seq=1 Ack=65 Win=62780 Len=0
+
+Frame 4: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: RealtekU_12:35:02 (52:54:00:12:35:02)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 140.82.121.6
+Transmission Control Protocol, Src Port: 57230, Dst Port: 443, Seq: 1, Ack: 65, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.001291513    140.82.121.6          10.0.2.15             TCP      60     443 → 57230 [ACK] Seq=65 Ack=2 Win=65535 Len=0
+
+Frame 5: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface enp0s3, id 0
+Ethernet II, Src: RealtekU_12:35:02 (52:54:00:12:35:02), Dst: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9)
+Internet Protocol Version 4, Src: 140.82.121.6, Dst: 10.0.2.15
+Transmission Control Protocol, Src Port: 443, Dst Port: 57230, Seq: 65, Ack: 2, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 2.123629515    PcsCompu_b9:dc:b9     RealtekU_12:35:02     ARP      42     Who has 10.0.2.2? Tell 10.0.2.15
+
+Frame 6: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: RealtekU_12:35:02 (52:54:00:12:35:02)
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 2.124058142    RealtekU_12:35:02     PcsCompu_b9:dc:b9     ARP      60     10.0.2.2 is at 52:54:00:12:35:02
+
+Frame 7: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface enp0s3, id 0
+Ethernet II, Src: RealtekU_12:35:02 (52:54:00:12:35:02), Dst: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9)
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 11.819256114   140.82.114.25         10.0.2.15             TLSv1.2  80     Application Data
+
+Frame 8: 80 bytes on wire (640 bits), 80 bytes captured (640 bits) on interface enp0s3, id 0
+Ethernet II, Src: RealtekU_12:35:02 (52:54:00:12:35:02), Dst: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9)
+Internet Protocol Version 4, Src: 140.82.114.25, Dst: 10.0.2.15
+Transmission Control Protocol, Src Port: 443, Dst Port: 40396, Seq: 1, Ack: 1, Len: 26
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 11.819592255   10.0.2.15             140.82.114.25         TLSv1.2  84     Application Data
+
+Frame 9: 84 bytes on wire (672 bits), 84 bytes captured (672 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: RealtekU_12:35:02 (52:54:00:12:35:02)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 140.82.114.25
+Transmission Control Protocol, Src Port: 40396, Dst Port: 443, Seq: 1, Ack: 27, Len: 30
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 11.820149087   140.82.114.25         10.0.2.15             TCP      60     443 → 40396 [ACK] Seq=27 Ack=31 Win=65535 Len=0
+
+Frame 10: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface enp0s3, id 0
+Ethernet II, Src: RealtekU_12:35:02 (52:54:00:12:35:02), Dst: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9)
+Internet Protocol Version 4, Src: 140.82.114.25, Dst: 10.0.2.15
+Transmission Control Protocol, Src Port: 443, Dst Port: 40396, Seq: 27, Ack: 31, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 15.352767365   10.0.2.15             10.0.2.255            NBNS     92     Name query NB WORKGROUP<1d>
+
+Frame 11: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 10.0.2.255
+User Datagram Protocol, Src Port: 52691, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 15.604407752   10.0.2.15             10.0.2.255            NBNS     92     Name query NB WORKGROUP<1b>
+
+Frame 12: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 10.0.2.255
+User Datagram Protocol, Src Port: 48556, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 15.856264081   10.0.2.15             10.0.2.255            NBNS     92     Name query NB WORKGROUP<20>
+
+Frame 13: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 10.0.2.255
+User Datagram Protocol, Src Port: 38899, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 16.265362394   fe80::72a6:4730:9ed8:f895 ff02::fb              MDNS     180    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 14: 180 bytes on wire (1440 bits), 180 bytes captured (1440 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::72a6:4730:9ed8:f895, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 16.265680039   10.0.2.15             224.0.0.251           MDNS     160    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 15: 160 bytes on wire (1280 bits), 160 bytes captured (1280 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 17.267779451   fe80::72a6:4730:9ed8:f895 ff02::fb              MDNS     180    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 16: 180 bytes on wire (1440 bits), 180 bytes captured (1440 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::72a6:4730:9ed8:f895, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 17.268176448   10.0.2.15             224.0.0.251           MDNS     160    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 17: 160 bytes on wire (1280 bits), 160 bytes captured (1280 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 19.268983805   fe80::72a6:4730:9ed8:f895 ff02::fb              MDNS     180    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 18: 180 bytes on wire (1440 bits), 180 bytes captured (1440 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::72a6:4730:9ed8:f895, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 19.269556237   10.0.2.15             224.0.0.251           MDNS     160    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 19: 160 bytes on wire (1280 bits), 160 bytes captured (1280 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 23.273267038   fe80::72a6:4730:9ed8:f895 ff02::fb              MDNS     180    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 20: 180 bytes on wire (1440 bits), 180 bytes captured (1440 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::72a6:4730:9ed8:f895, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 23.273665187   10.0.2.15             224.0.0.251           MDNS     160    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 21: 160 bytes on wire (1280 bits), 160 bytes captured (1280 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 31.281193843   fe80::72a6:4730:9ed8:f895 ff02::fb              MDNS     180    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 22: 180 bytes on wire (1440 bits), 180 bytes captured (1440 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::72a6:4730:9ed8:f895, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 31.281595739   10.0.2.15             224.0.0.251           MDNS     160    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 23: 160 bytes on wire (1280 bits), 160 bytes captured (1280 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 47.297679890   fe80::72a6:4730:9ed8:f895 ff02::fb              MDNS     180    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 24: 180 bytes on wire (1440 bits), 180 bytes captured (1440 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::72a6:4730:9ed8:f895, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 47.298075915   10.0.2.15             224.0.0.251           MDNS     160    Standard query 0x0000 PTR _ftp._tcp.local, "QM" question PTR _nfs._tcp.local, "QM" question PTR _afpovertcp._tcp.local, "QM" question PTR _smb._tcp.local, "QM" question PTR _sftp-ssh._tcp.local, "QM" question PTR _webdavs._tcp.local, "QM" question PTR _webdav._tcp.local, "QM" question
+
+Frame 25: 160 bytes on wire (1280 bits), 160 bytes captured (1280 bits) on interface enp0s3, id 0
+Ethernet II, Src: PcsCompu_b9:dc:b9 (08:00:27:b9:dc:b9), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 10.0.2.15, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
