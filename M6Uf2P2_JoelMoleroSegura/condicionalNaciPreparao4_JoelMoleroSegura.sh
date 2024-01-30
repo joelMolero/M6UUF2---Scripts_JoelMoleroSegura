@@ -1,21 +1,22 @@
 #!/bin/bash
 
-# Verificar si se ha proporcionado la ruta del archivo de capturas
+# Verificar si se ha proporcionado la ruta del archivo de capturas y el nombre del protocolo
 if [ "$#" -eq 0 ]; then
-    echo "Usage: $0 <ruta_del_fitxer_wireshark>"
+    echo "Usage: $0 <ruta_del_fitxer_wireshark> <protocol>"
 else
-    # Almacenar la ruta del archivo de capturas
+    # Almacenar la ruta del archivo de capturas y el nombre del protocolo
     ruta_fitxer_wireshark="$1"
+    protocol="$2"
 
     # Verificar si el archivo de capturas existe
     if [ ! -f "$ruta_fitxer_wireshark" ]; then
         echo "Error: El fitxer de captures $ruta_fitxer_wireshark no existeix."
     else
-        # Contar conexiones de cualquier protocolo
-        num_connexions=$(awk -F, '{print $7}' "$ruta_fitxer_wireshark" | sort | uniq -c | awk '{print $1}')
+        # Contar conexiones del protocolo especificado
+        num_connexions=$(grep -o "$protocol" "$ruta_fitxer_wireshark" | wc -l)
 
         # Mostrar el resultado
-        echo "S'han establert $num_connexions connexions de diferents protocols."
+        echo "S'han establert $num_connexions connexions del protocol $protocol."
     fi
 fi
 
