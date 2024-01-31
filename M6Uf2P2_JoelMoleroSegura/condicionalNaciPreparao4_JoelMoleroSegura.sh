@@ -21,6 +21,5 @@ else
 fi
 
 #Lo que hace el awk es extraer el campo que contiene el protocolo.
-#-F, es como un delimitador, separa por comas o por lo que tu le digas.
-# sort y uniq -c para contar las conexiones unicas de cada protocolo.
 # Usage: Sirve para indicar como se utiliza el programa, es decir que si hay error, imprimira un mensaje diciendo como hay que imprimirlo: : ./condicionalNaciPreparao4_JoelMoleroSegura.sh <ruta_del_fitxer_wireshark>
+# wc -l cuenta las conexiones preguntadas por parametros.
