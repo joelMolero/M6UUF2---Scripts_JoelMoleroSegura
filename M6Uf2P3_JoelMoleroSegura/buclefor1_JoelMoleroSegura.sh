@@ -15,7 +15,7 @@ read frase  # Llegeix l'entrada de l'usuari i la guarda en una variable
 # Processa cada arxiu
 for arxiu in "${arxius[@]}"; do  # Bucle que recorre cada element de l'array
     # Elimina els comentaris de l'arxiu
-    sed -i '/^#/d' "$arxiu"  # Utilitza sed per eliminar les línies que comencen amb #
+    sed -i '/^#/d' "$arxiu"  # Utilitza sed per eliminar les línies que comencen amb # -i es para guardar cambios directamente en el archivo, después, con lo siguiente es para indicar que si comienza por # lo borre.
 
     # Comprova si la paraula existeix a l'arxiu
     if grep -q "$paraula" "$arxiu"; then  # Utilitza grep per buscar la paraula a l'arxiu
