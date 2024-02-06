@@ -1,42 +1,53 @@
 #!/bin/bash
 
-# Inicializamos la variable 'continuar' con el valor 's'
-continuar="s"
+# Variable semáforo
+jugar=true
+continuar=true
 
-# Mientras 'continuar' sea igual a 's', el bucle se ejecutará
-while [[ $continuar == "s" ]]; do
-    # Solicitamos al usuario que introduzca su elección
+# Bucle principal del juego
+while $jugar; do
+    # Solicita al usuario que introduzca su elección
     echo "Escribe piedra, papel o tijeras:"
-    read jugador  # Guardamos la elección del usuario en la variable 'jugador'
+    read eleccion_usuario
+    # Convierte la elección del usuario a minúsculas para facilitar la comparación
+    eleccion_usuario=$(echo $eleccion_usuario | tr '[:upper:]' '[:lower:]')
 
-    # Generamos un número aleatorio entre 0 y 2 para la elección de la máquina
-    maquina=$((RANDOM%3))
-
-    # Dependiendo del número generado, asignamos una elección a la máquina
-    case $maquina in
-        0)
-            maquina="piedra";;
-        1)
-            maquina="papel";;
-        2)
-            maquina="tijeras";;
-    esac
-
-    # Mostramos la elección de la máquina
-    echo "La máquina elige $maquina"
-
-    # Comparamos las elecciones del jugador y la máquina para determinar el resultado
-    if [[ $jugador == $maquina ]]; then
-        echo "Empate"
-    elif [[ ($jugador == "piedra" && $maquina == "tijeras") ||
-            ($jugador == "papel" && $maquina == "piedra") ||
-            ($jugador == "tijeras" && $maquina == "papel") ]]; then
-        echo "¡Ganaste!"
-    else
-        echo "Perdiste"
+    if [[ $eleccion_usuario != "piedra" && $eleccion_usuario != "papel" && $eleccion_usuario != "tijeras" ]]; then
+        echo "Entrada no válida. Inténtalo de nuevo."
+        continue
     fi
 
-    # Preguntamos al usuario si quiere jugar otra vez
-    echo "¿Quieres jugar otra vez? (s/n)"
-    read continuar  # Guardamos la respuesta del usuario en la variable 'continuar'
-done  # Si 'continuar' es distinto de 's', salimos del bucle y el script termina
+    # Genera la elección de la máquina eligiendo un elemento aleatorio de la matriz 'opciones'
+    opciones=("piedra" "papel" "tijeras")
+    eleccion_maquina=${opciones[$RANDOM % 3]}
+    echo "La máquina eligió $eleccion_maquina"
+
+    # Compara las elecciones del usuario y de la máquina para determinar el resultado del juego
+    if [[ $eleccion_usuario == $eleccion_maquina ]]; then
+        echo "Es un empate."
+    elif [[ ($eleccion_usuario == "piedra" && $eleccion_maquina == "tijeras") ||
+            ($eleccion_usuario == "papel" && $eleccion_maquina == "piedra") ||
+            ($eleccion_usuario == "tijeras" && $eleccion_maquina == "papel") ]]; then
+        echo "¡Ganaste!"
+    else
+        echo "Perdiste."
+    fi
+
+    # Pregunta al usuario si quiere jugar otra vez
+    continuar=true
+    while $continuar; do
+        echo "¿Quieres jugar otra vez? (sí/no):"
+        read respuesta
+        respuesta=$(echo $respuesta | tr '[:upper:]' '[:lower:]')
+
+        if [[ $respuesta == "no" ]]; then
+            jugar=false
+            continuar=false
+        elif [[ $respuesta == "sí" ]]; then
+            continuar=false
+        else
+            echo "Entrada no válida. Inténtalo de nuevo."
+        fi
+    done
+done
+
