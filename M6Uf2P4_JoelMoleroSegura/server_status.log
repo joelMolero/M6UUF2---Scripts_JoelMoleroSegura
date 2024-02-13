@@ -1,0 +1,11 @@
+server1 està Inactiu
+server2 està Inactiu
+server3 està Inactiu
+google.com està Actiu
+172.30.0.254 està Actiu
+google.com està Actiu
+172.30.0.254 està Actiu
+ies-sabadell.cat està Actiu
+google.com està Actiu PING google.com (142.250.201.78) 56(84) bytes of data. 64 bytes from mad07s25-in-f14.1e100.net (142.250.201.78): icmp_seq=1 ttl=114 time=13.7 ms 64 bytes from mad07s25-in-f14.1e100.net (142.250.201.78): icmp_seq=2 ttl=114 time=21.5 ms 64 bytes from mad07s25-in-f14.1e100.net (142.250.201.78): icmp_seq=3 ttl=114 time=21.9 ms 64 bytes from mad07s25-in-f14.1e100.net (142.250.201.78): icmp_seq=4 ttl=114 time=21.4 ms --- google.com ping statistics --- 4 packets transmitted, 4 received, 0% packet loss, time 3006ms rtt min/avg/max/mdev = 13.681/19.613/21.861/3.428 ms
+172.30.0.254 està Actiu PING 172.30.0.254 (172.30.0.254) 56(84) bytes of data. 64 bytes from 172.30.0.254: icmp_seq=1 ttl=64 time=0.053 ms 64 bytes from 172.30.0.254: icmp_seq=2 ttl=64 time=0.075 ms 64 bytes from 172.30.0.254: icmp_seq=3 ttl=64 time=0.074 ms 64 bytes from 172.30.0.254: icmp_seq=4 ttl=64 time=0.073 ms --- 172.30.0.254 ping statistics --- 4 packets transmitted, 4 received, 0% packet loss, time 3073ms rtt min/avg/max/mdev = 0.053/0.068/0.075/0.009 ms
+ies-sabadell.cat està Actiu PING ies-sabadell.cat (192.168.0.209) 56(84) bytes of data. 64 bytes from 192.168.0.209 (192.168.0.209): icmp_seq=1 ttl=62 time=2.73 ms 64 bytes from 192.168.0.209 (192.168.0.209): icmp_seq=2 ttl=62 time=7.58 ms 64 bytes from 192.168.0.209 (192.168.0.209): icmp_seq=3 ttl=62 time=11.3 ms 64 bytes from 192.168.0.209 (192.168.0.209): icmp_seq=4 ttl=62 time=11.5 ms --- ies-sabadell.cat ping statistics --- 4 packets transmitted, 4 received, 0% packet loss, time 3005ms rtt min/avg/max/mdev = 2.732/8.276/11.520/3.561 ms
